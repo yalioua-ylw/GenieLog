@@ -41,6 +41,16 @@ public class CompteARebour implements TimerChangeListener {
     @Override
     public void propertyChange(PropertyChangeEvent pce) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(pce.getPropertyName() == "secondes"){
+            compteArebours--;
+            System.out.println("Il me reste : " + compteArebours);
+            if (compteArebours == 0) { // se désabonner du TimerService !
+                Lookup.getInstance()
+                        .getService(TimerService.class)
+                        .removeTimeChangeListener(this);
+            }
+        }
+
     }
 
 }

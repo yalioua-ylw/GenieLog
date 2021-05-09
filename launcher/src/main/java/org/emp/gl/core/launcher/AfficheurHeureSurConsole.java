@@ -30,6 +30,32 @@ public class AfficheurHeureSurConsole implements TimerChangeListener {
     @Override
     public void propertyChange(PropertyChangeEvent pce) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(pce.getPropertyName() == "dixiemeDeSeconde"){
+            TimerService ts = Lookup.getInstance().getService(TimerService.class);
+
+            /*System.out.println("" + ts.getHeures() + ":" + ts.getMinutes() + ":"
+                    + ts.getSecondes() + "," + ts.getDixiemeDeSeconde());*/
+            System.out.println("" + ts.getHeures() + ":" + ts.getMinutes() + ":"
+                    + ts.getSecondes() + "," + pce.getNewValue());
+        }
+        if(pce.getPropertyName() == "secondes"){
+            TimerService ts = Lookup.getInstance().getService(TimerService.class);
+
+            System.out.println("" + ts.getHeures() + ":" + ts.getMinutes() + ":"
+                    + pce.getNewValue() + "," + ts.getDixiemeDeSeconde());
+        }
+        if(pce.getPropertyName() == "minutes"){
+            TimerService ts = Lookup.getInstance().getService(TimerService.class);
+
+            System.out.println("" + ts.getHeures() + ":" + pce.getNewValue() + ":"
+                    + ts.getSecondes() + "," + ts.getDixiemeDeSeconde());
+        }
+        if(pce.getPropertyName() == "heures"){
+            TimerService ts = Lookup.getInstance().getService(TimerService.class);
+
+            System.out.println("" + pce.getNewValue() + ":" + ts.getMinutes() + ":"
+                    + ts.getSecondes() + "," + ts.getDixiemeDeSeconde());
+        }
     }
 
 }
