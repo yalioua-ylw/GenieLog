@@ -30,27 +30,26 @@ public class AfficheurHeureSurConsole implements TimerChangeListener {
     @Override
     public void propertyChange(PropertyChangeEvent pce) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        if(pce.getPropertyName() == "dixiemeDeSeconde"){
+        if(pce.getPropertyName() == TimerChangeListener.DIXEME_DE_SECONDE_PROP){
             TimerService ts = Lookup.getInstance().getService(TimerService.class);
 
-            /*System.out.println("" + ts.getHeures() + ":" + ts.getMinutes() + ":"
-                    + ts.getSecondes() + "," + ts.getDixiemeDeSeconde());*/
             System.out.println("" + ts.getHeures() + ":" + ts.getMinutes() + ":"
                     + ts.getSecondes() + "," + pce.getNewValue());
+
         }
-        if(pce.getPropertyName() == "secondes"){
+        if(pce.getPropertyName() == TimerChangeListener.SECONDE_PROP){
             TimerService ts = Lookup.getInstance().getService(TimerService.class);
 
             System.out.println("" + ts.getHeures() + ":" + ts.getMinutes() + ":"
                     + pce.getNewValue() + "," + ts.getDixiemeDeSeconde());
         }
-        if(pce.getPropertyName() == "minutes"){
+        if(pce.getPropertyName() == TimerChangeListener.MINUTE_PROP){
             TimerService ts = Lookup.getInstance().getService(TimerService.class);
 
             System.out.println("" + ts.getHeures() + ":" + pce.getNewValue() + ":"
                     + ts.getSecondes() + "," + ts.getDixiemeDeSeconde());
         }
-        if(pce.getPropertyName() == "heures"){
+        if(pce.getPropertyName() == TimerChangeListener.HEURE_PROP){
             TimerService ts = Lookup.getInstance().getService(TimerService.class);
 
             System.out.println("" + pce.getNewValue() + ":" + ts.getMinutes() + ":"

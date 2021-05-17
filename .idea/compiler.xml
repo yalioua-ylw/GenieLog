@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="GuiControl" />
+        <module name="core-lookup" />
+        <module name="GuiDisplay" />
+        <module name="timer-service" />
+        <module name="model" />
+        <module name="timer-service-impl-withdelegation" />
+        <module name="launcher" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core-lookup" target="1.8" />
+      <module name="firsttp" target="1.8" />
+      <module name="GuiControl" target="8" />
+      <module name="GuiDisplay" target="8" />
+      <module name="launcher" target="1.8" />
+      <module name="model" target="8" />
+      <module name="reglable" target="8" />
+      <module name="reglage" target="8" />
+      <module name="time-service-impl" target="1.8" />
+      <module name="timer-service" target="1.8" />
+      <module name="timer-service-impl-withdelegation" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

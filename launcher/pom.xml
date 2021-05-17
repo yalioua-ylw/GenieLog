@@ -53,6 +53,30 @@
           <version>0.0.1</version>
           <scope>compile</scope>
       </dependency>
+      <dependency>
+          <groupId>org.emp.gl</groupId>
+          <artifactId>model</artifactId>
+          <version>0.0.1</version>
+          <scope>compile</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.emp.gl</groupId>
+          <artifactId>model</artifactId>
+          <version>0.0.1</version>
+          <scope>compile</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.emp.gl</groupId>
+          <artifactId>gui-control</artifactId>
+          <version>0.0.1</version>
+          <scope>compile</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.emp.gl</groupId>
+          <artifactId>gui-display</artifactId>
+          <version>0.0.1</version>
+          <scope>compile</scope>
+      </dependency>
   </dependencies>
 
   <build>

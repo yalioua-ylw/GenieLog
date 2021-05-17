@@ -29,7 +29,11 @@
  <modules>  <module>core-lookup</module>
     <module>launcher</module>
   <module>timer-service</module>
-  <module>time-service-impl</module>
    <module>timer-service-impl-withdelegation</module>
-  </modules>
+     <module>reglable</module>
+   <module>reglage</module>
+     <module>GuiDisplay</module>
+     <module>GuiControl</module>
+     <module>model</module>
+ </modules>
 </project>
